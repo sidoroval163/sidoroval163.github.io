@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="menu">
+      <button class="hamburger hamburger-anim">
+        <span>Menu</span>
+      </button>
+
+      <div id="menu_blocker" class="menu_block">
+        <ul>
+          <li class="menu_element">
+            <a class="point" href="/english-for-kids/dist/index.html"
+              >Main page</a
+            >
+          </li>
+          <li class="menu_element">
+            <a class="point" href="/english-for-kids/dist/statlist.html"
+              >Colors</a
+            >
+          </li>
+          <li class="menu_element">
+            <a class="point" href="#animals">Animals</a>
+          </li>
+          <li class="menu_element">
+            <a class="point" href="#emotions">Emotions</a>
+          </li>
+          <li class="menu_element">
+            <a class="point" href="#family">Family</a>
+          </li>
+          <li class="menu_element">
+            <a class="point" href="#food">Food</a>
+          </li>
+          <li class="menu_element">
+            <a class="point" href="#sport">Sport</a>
+          </li>
+          <li class="menu_element">
+            <a class="point" href="#transport">Transport</a>
+          </li>
+          <li class="menu_element">
+            <a class="point" href="#clothes">Clothes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <main>
+        <h1 class="header_text">Hello let's learn baby</h1>
+        <div class="switch">
+          <span>Train</span>
+          <input
+            id="switch"
+            class="switch-btn"
+            type="checkbox"
+            onselect="return false"
+            onmousedown="return false"
+          />
+          <span>Play</span>
+        </div>
+        <div id="grid" class="menu_grid_table">
+          <div
+            id="colors"
+            class="menu_grid_element colors"
+            onClick="window.location='../dist/statlist.html'"
+          >
+            <div class="img_menu_grid">
+              <img
+                class="menu_img"
+                src="assets/menu_container/colors.png"
+                alt="colors image"
+              />
+            </div>
+
+            <div class="info">
+              <p>Colors</p>
+            </div>
+          </div>
+          <div id="animals" class="menu_grid_element animals">
+            <div id="flipper" class="flipper">
+              <div class="front">
+                <div class="img_menu_grid">
+                  <img
+                    class="menu_img"
+                    src="assets/menu_container/animals.jpg"
+                    alt="animals image"
+                  />
+                </div>
+                <div class="info">
+                  <p>Animals</p>
+                </div>
+              </div>
+              <div class="back" id="flipped_back">
+                <div class="img_menu_grid">
+                  <img
+                    class="menu_img"
+                    src="assets/menu_container/animals.jpg"
+                    alt="animals image"
+                  />
+                </div>
+                <div class="info">
+                  <p>Животные</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="emotions" class="menu_grid_element emotions">
+            <div class="img_menu_grid">
+              <img
+                class="menu_img"
+                src="assets/menu_container/emotions.jpg"
+                alt="emotions image"
+              />
+            </div>
+            <div class="info">
+              <p>Emotions</p>
+            </div>
+          </div>
+          <div id="family" class="menu_grid_element family">
+            <div class="img_menu_grid">
+              <img
+                class="menu_img"
+                src="assets/menu_container/family.jpg"
+                alt="family image"
+              />
+            </div>
+            <div class="info">
+              <p>Family</p>
+            </div>
+          </div>
+          <div id="food" class="menu_grid_element food">
+            <div class="img_menu_grid">
+              <img
+                class="menu_img"
+                src="assets/menu_container/food.jpg"
+                alt="food image"
+              />
+            </div>
+            <div class="info">
+              <p>Food</p>
+            </div>
+          </div>
+          <div id="sport" class="menu_grid_element sport">
+            <div class="img_menu_grid">
+              <img
+                class="menu_img"
+                src="assets/menu_container/sport.jpg"
+                alt="sport image"
+              />
+            </div>
+            <div class="info">
+              <p>Sport</p>
+            </div>
+          </div>
+          <div id="transport" class="menu_grid_element transport">
+            <div class="img_menu_grid">
+              <img
+                class="menu_img"
+                src="assets/menu_container/transport.jpg"
+                alt="transport image"
+              />
+            </div>
+            <div class="info"><p>Transport</p></div>
+          </div>
+          <div id="clothes" class="menu_grid_element clothes">
+            <div class="img_menu_grid">
+              <img
+                class="menu_img"
+                src="assets/menu_container/clothes.jpg"
+                alt="clothes image"
+              />
+            </div>
+            <div class="info"><p>Clothes</p></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
